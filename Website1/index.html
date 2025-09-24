@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luana Homes</title>
+  <link rel="stylesheet" href="syle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <div class="logo"><span>Luana Homes</span></div>
+      <div class="links">
+        <div class="link"><a href="#home">Home</a></div>
+        <div class="link"><a href="#about">About</a></div>
+        <div class="link"><a href="#houses">Houses</a></div>
+        <div class="link login-btn"><a href="#">Login</a></div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section id="home">
+      <div class="form-container closed">
+        <i class="fa fa-times form_close" aria-hidden="true"></i>
+        <div class="-form">
+          <form action="#">
+            <h2>Login</h2>
+
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" required title="Your Gmail Must End With @Gmail.com">
+              <i class="fa fa-envelope email" aria-hidden="true"></i>
+            </div>
+
+            <div class="input_box">
+              <input type="password" placeholder="Enter your password" required
+                title="Password must be at least 8 characters, include uppercase, lowercase, a number, and a special character.">
+              <i class="fa fa-lock password" aria-hidden="true"></i>
+              <i class="fa fa-eye-slash pw_hide" aria-hidden="true"></i>
+            </div>
+
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check">
+                <label for="check">Remember me</label>
+              </span>
+              <a href="#" class="forgot_pw">Forgot passowrd</a>
+            </div>
+
+            <button class="button">Login Now</button>
+            <div class="login_signup">
+              Already have an account? <a href="#" id="signup">Signup</a>
+            </div>
+            <script>
+              const closeIcon = document.querySelector('.fa-times');
+              const formcontainer = document.querySelector('.form-container')
+              const navcontainer = document.querySelector('.nav-container')
+              const loginbtn = document.querySelector('.login-btn');
+
+              closeIcon.addEventListener('click', () => {
+                formcontainer.classList.add('closed');
+              });
+
+              loginbtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                formcontainer.classList.remove('closed');
+                formcontainer.classList.add('fadeUp');
+              });
+
+              loginbtn.addEventListener('click', () => {
+                formcontainer.classList.remove('closed');
+              });
+            </script>
+          </form>
+        </div>
+      </div>
+
+      <video autoplay muted loop id="myVideo">
+        <source src="video.mp4" type="video/mp4">
+      </video>
+      <div class="welcome-section">
+        <h2>Welcome To Luana Homes</h2>
+        <p>Find The House That Is Just Right For You.</p>
+        <div class="phone"><span><i class="fa-solid fa-phone"></i> 80555</span></div>
+      </div>
+    </section>
+    <section class="houses">
+      <div class="cards">
+        <div class="card">
+          <img src="villa.jpg" alt="">
+          <div class="card-content">
+            <h2>CMC Phase II Villa</h2>
+            <p>Villa</p>
+            <div class="icons">
+              <span><i class="fa-solid fa-toilet"></i> 6</span>
+              <span><i class="fa-solid fa-bed"></i> 4</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 350 sq.mt</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images.jpg" alt="">
+          <div class="card-content">
+            <h2>Bole Atlas Shops</h2>
+            <p>Commercial Apartment</p>
+            <div class="icons">
+              <span><i class="fa-solid fa-toilet"></i> 1</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 40-173 sq.mt</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images (1).jpg" alt="">
+          <div class="card-content">
+            <h2>Gerji Apartents</h2>
+            <p>Apartments</p>
+            <div class="icons">
+              <span><i class="fa-solid fa-toilet"></i> 1</span>
+              <span><i class="fa-solid fa-bed"></i> 1</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 70-200 sq.mt</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="604923272.jpg" alt="">
+          <div class="card-content">
+            <h2>Family Apartment</h2>
+            <p>Apartment</p>
+            <div class="icons">
+              <span><i class="fa-solid fa-toilet"></i> 1</span>
+              <span><i class="fa-solid fa-bed"></i> 3</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 125 sq.mt</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="Recoverd_jpg_file4-Copy-1.jpg" alt="">
+          <div class="card-content">
+            <h2>CMC Villa</h2>
+            <p>Villa</p>
+            <div class="icons">
+              <span><i class="fa-solid fa-toilet"></i> 6</span>
+              <span><i class="fa-solid fa-bed"></i> 5</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 500 sq.mt</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images (3).jpg" alt="">
+          <div class="card-content">
+            <h2>Bole Bulbula Villa</h2>
+            <p>Villa</p>
+            <div class="icons">
+              <span><i class="fa-solid fa-toilet"></i> 5</span>
+              <span><i class="fa-solid fa-bed"></i> 6</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 560 sq.mt</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images (5).jpg" alt="">
+          <div class="card-content">
+            <h2>Gerji Villa</h2>
+            <p>Villa</p>
+            <div class="icons">
+              <span><i class="fa-solid fa-toilet"></i> 2</span>
+              <span><i class="fa-solid fa-bed"></i> 4</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 400 sq.mt</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="wsg.jpg" alt="">
+          <div class="card-content">
+            <h2>Goro Villa</h2>
+            <p>Villa</p>
+            <div class="icons">
+              <span><i class="fa-solid fa-toilet"></i> 5</span>
+              <span><i class="fa-solid fa-bed"></i> 7</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 725 sq.mt</span>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="about">
+      <img src="hi.jpg" alt="">
+      <div class="title">
+        <h2>Who We Are</h2>
+      </div>
+      <p>
+        Luana Homes is a premium website catering to a diverse audience
+        assisting them find the properties according to their needs. While
+        living in an empire such as Ethiopia is great, we make sure you find
+        your rightful place in it. We work with an elite team that handles
+        operations professionally and securely with an added class that
+        sets us apart. Our portal is set to provide all necessary
+        information to consumers on-the-go, on desktop,
+        Additionally, users get an easy access to brokers that will get
+        them a couple of steps closer to their next home.
+      </p>
+      <p>
+        With LuanaHomes.com delivering excellence to a Global Audience,
+        customers are sure to receive authentic listings and prime-class
+        customer service that delivers the best solution to all queries.
+        For agencies and brokers, we offer a new outlook to reaching your
+        audience with some of the best industry practices You will have
+        the
+      <p> complete freedom to customize your adverts, directly find and
+        compete with your contemporaries on one platform. Additionally, we
+        are on the path of a sustainable </p>
+      yet massive growth globally and
+      as such are available to inquiries from Venture Capitalists who
+      are looking to invest at the tangents and verticals of the market
+      here.
+      </p>
+      <div class="rights">
+        <center>
+          <p>© 2025 LuanaHomes.com</p>
+        </center>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <script>
+  const loginBtn = document.querySelector('.login-btn');
+  const loginLink = loginBtn.querySelector('a');
+  const formContainer = document.querySelector('.form-container');
+  const closeicon = document.querySelector('.form_close');
+  const loginForm = document.getElementById('login-form');
+  const profile = document.querySelector('.profile');
+  const profileIcon = document.getElementById('profile-icon');
+  const logoutMenu = document.getElementById('logout-menu');
+  const logoutBtn = document.getElementById('logout-btn');
+
+  // Show form
+  loginLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    formContainer.classList.remove('closed');
+  });
+
+  // Close form
+  closeIcon.addEventListener('click', () => {
+    formContainer.classList.add('closed');
+  });
+
+  // Handle login
+  loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const remember = document.getElementById('remember').checked;
+    if (remember) {
+      localStorage.setItem('loggedIn', 'true');
+      localStorage.setItem('email', email);
+    }
+    showProfile();
+    formContainer.classList.add('closed');
+  });
+
+  // Show logout menu
+  profileIcon.addEventListener('click', () => {
+    logoutMenu.classList.toggle('hidden');
+  });
+
+  // Log out
+  logoutBtn.addEventListener('click', () => {
+    localStorage.removeItem('loggedIn');
+    localStorage.removeItem('email');
+    showLogin();
+    logoutMenu.classList.add('hidden');
+  });
+
+  function showProfile() {
+    loginBtn.classList.add('hidden');
+    profile.classList.remove('hidden');
+  }
+
+  function showLogin() {
+    loginBtn.classList.remove('hidden');
+    profile.classList.add('hidden');
+  }
+
+  // On page load, check if logged in
+  if (localStorage.getItem('loggedIn') === 'true') {
+    showProfile();
+  } else {
+    showLogin();
+  }
+</script>
+
+</body>
+
+</html>
